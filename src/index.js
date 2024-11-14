@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import ListaDocentes from './Trabajadores/Docente';
+import ListaAlumnos from './Alumonos/ListaAlumnos';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ListaDocentes/>
+    <ListaAlumnos/>
   </React.StrictMode>
 );
 

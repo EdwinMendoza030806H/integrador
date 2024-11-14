@@ -1,0 +1,80 @@
+    /* Estilos generales */
+    .alumnos-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .alumno-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 320px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1, h2, h3 {
+        color: #333;
+    }
+
+    /* Estilos para tablas */
+    .tabla-alumno, .tabla-practicas {
+        width: 100%;
+        margin-top: 10px;
+        border-collapse: collapse;
+    }
+
+    .tabla-alumno td, .tabla-practicas th, .tabla-practicas td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    /* Estilo para encabezados de prácticas */
+    .tabla-practicas th {
+        background-color: #f1f1f1;
+        font-size: 0.85em;
+        padding: 8px 5px;
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    }
+
+    .tabla-practicas td {
+        font-size: 0.85em;
+    }
+
+    /* Estilo para el contenedor de la tabla de prácticas */
+    .tabla-practicas-container {
+        overflow-x: auto; /* Añade scroll horizontal si la tabla es más ancha que el contenedor */
+        margin-top: 10px;
+    }
+
+    /* Estilos para la gráfica */
+    .grafica-promedio {
+        margin-top: 15px;
+    }
+
+    .grafica-promedio canvas {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    /* Estilos para el estado aprobado/reprobado */
+    .status {
+        font-weight: bold;
+        padding: 5px;
+        border-radius: 4px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .status.aprobado {
+        background-color: #28a745;
+    }
+
+    .status.reprobado {
+        background-color: #dc3545;
+    }
